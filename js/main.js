@@ -25,17 +25,20 @@
         }
     });
 
-        // Header carousel
+    // Header carousel
     $(".header-carousel").owlCarousel({
         animateOut: 'fadeOut',
         items: 1,
         margin: 0,
         stagePadding: 0,
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 500,
         dots: true,
-        loop: false,
+        loop: true,
         nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
         ],
     });
 
@@ -61,6 +64,7 @@
 
 
 })(jQuery);
+
 
 
 
