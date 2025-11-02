@@ -31,14 +31,11 @@
         items: 1,
         margin: 0,
         stagePadding: 0,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 500,
         dots: true,
-        loop: true,
+        loop: false,
         nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
         ],
     });
 
@@ -64,6 +61,7 @@
 
 
 })(jQuery);
+
 
 
 
