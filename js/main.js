@@ -25,6 +25,23 @@
         }
     });
 
+        // Header carousel
+    $(".header-carousel").owlCarousel({
+        animateOut: 'fadeOut',
+        items: 1,
+        margin: 0,
+        stagePadding: 0,
+        autoplay: true,
+        smartSpeed: 500,
+        dots: true,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
+    });
+
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 5,
@@ -47,5 +64,6 @@
 
 
 })(jQuery);
+
 
 
