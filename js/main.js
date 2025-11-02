@@ -25,22 +25,17 @@
         }
     });
 
-    // Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'fadeOut',
-        items: 1,
-        margin: 0,
-        stagePadding: 0,
-        autoplay: true,
-        smartSpeed: 500,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-    });
+// Header carousel (disabled / static)
+$(".header-carousel").owlCarousel({
+    items: 1,
+    autoplay: false,   // no auto slide
+    loop: false,       // only one slide shown
+    dots: false,       // no dots
+    nav: false,        // no arrows
+    mouseDrag: false,  // no dragging
+    touchDrag: false,  // no swipe on mobile
+});
+
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -64,6 +59,7 @@
 
 
 })(jQuery);
+
 
 
 
