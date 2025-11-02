@@ -709,11 +709,65 @@
 /*** Footer End ***/
 
 
-/*** copyright Start ***/
-.copyright {
-    background: var(--bs-dark);
-    border-top: 1px solid rgba(255, 255, 255, .08);
+/* ===============================
+   Responsive Fixes for Navbar and Hero Text
+   =============================== */
+
+/* Adjust large text for smaller screens */
+@media (max-width: 991px) {
+  /* Shrink hero headline and subheading */
+  .carousel-caption h1.display-1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1.2rem !important;
+  }
+
+  /* Adjust text alignment on tablets/phones */
+  .carousel-caption .text-sm-center {
+    text-align: center !important;
+  }
 }
-/*** copyright end ***/
+
+@media (max-width: 768px) {
+  /* Make the hero headline smaller for mobile */
+  .carousel-caption h1.display-1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  /* Resize the brand text in the navbar */
+  .navbar-brand h1 {
+    font-size: 1.4rem !important;
+    white-space: normal !important;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Reduce padding inside navbar items */
+  .navbar .navbar-nav .nav-item {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further scale down hero text on very small phones */
+  .carousel-caption h1.display-1 {
+    font-size: 1.7rem !important;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1rem !important;
+  }
+
+  /* Keep the navbar brand text readable */
+  .navbar-brand h1 {
+    font-size: 1.2rem !important;
+  }
+}
+
 
 
