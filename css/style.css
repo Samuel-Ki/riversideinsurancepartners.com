@@ -487,80 +487,6 @@
 /*** Service End ***/
 
 
-/*** Blog Start ***/
-.blog .blog-item {
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.blog .blog-item:hover {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
-}
-
-.blog .blog-item:hover .blog-content {
-    background: var(--bs-light);
-}
-
-.blog .blog-item .blog-img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.blog .blog-item .blog-img img {
-    transition: 0.5s;
-}
-
-.blog .blog-item:hover .blog-img img {
-    transform: scale(1.2);
-}
-
-.blog .blog-item .blog-img::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background: rgba(1, 95, 201, .2);
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.blog .blog-item:hover .blog-img::after {
-    height: 100%;
-}
-
-.blog .blog-item .blog-img .blog-categiry {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-top-left-radius: 10px;
-    display: inline-flex;
-    color: var(--bs-white);
-    background: var(--bs-primary);
-    z-index: 9;
-}
-
-.blog .blog-item .blog-content {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: var(--bs-white);
-}
-
-.blog .blog-item .blog-content a.btn {
-    color: var(--bs-dark);
-}
-
-.blog .blog-item:hover .blog-content a.btn:hover {
-    color: var(--bs-primary);
-}
-/*** Blog End ***/
-
-
 /*** Team Start ***/
 .team .team-item .team-img {
     position: relative;
@@ -706,6 +632,42 @@
 .footer .footer-item .footer-btn a:hover i {
     color: var(--bs-white);
 }
+
+/* ===============================
+   Footer Alignment and Spacing Fix
+   =============================== */
+
+/* Center all footer content */
+.footer {
+  text-align: center;
+}
+
+.footer .container,
+.footer .row {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Center the social icons and Instagram images */
+.footer .d-flex,
+.footer .social-links,
+.footer .row.g-2 {
+  justify-content: center !important;
+}
+
+/* Remove the extra gap at the bottom */
+.footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 20px !important;
+}
+
+/* Make sure the back-to-top button doesn’t force extra space */
+body {
+  overflow-x: hidden;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 /*** Footer End ***/
 
 
@@ -768,6 +730,7 @@
     font-size: 1.2rem !important;
   }
 }
+
 
 
 
