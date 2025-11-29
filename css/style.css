@@ -633,6 +633,17 @@
     color: var(--bs-white);
 }
 
+.about .col-xl-6 .img-fit {
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: flex-start; /* prevents vertical stretching */
+}
+
+.img-fit {
+    display: inline-block;
+    padding: 20px;    /* how much bigger than the image */
+}
+
 /* ===============================
    Footer Alignment and Spacing Fix
    =============================== */
