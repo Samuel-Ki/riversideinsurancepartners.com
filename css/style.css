@@ -262,6 +262,32 @@ img {
         opacity: 1;
     }
 }
+
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+.site-brand .site-brand__logo {
+    display: block;
+    width: auto;
+    height: 50px;
+    max-height: none;
+    flex-shrink: 0;
+}
+
+.site-brand__name {
+    color: var(--bs-primary);
+    font-size: clamp(1.4rem, 2vw, 2.5rem);
+    font-weight: 500;
+    line-height: 1.1;
+    white-space: nowrap;
+}
 /*** Navbar End ***/
 
 
@@ -365,6 +391,43 @@ img {
 
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
     color: var(--bs-white);
+}
+
+
+.hero-kicker {
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.hero-title {
+    max-width: 650px;
+    font-size: clamp(3rem, 5vw, 4.75rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hero-description {
+    max-width: 760px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+@media (max-width: 767.98px) {
+    .hero-kicker {
+        font-size: 0.9rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+        line-height: 1.1;
+        margin-bottom: 1rem !important;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem !important;
+    }
 }
 /*** Single Page Hero Header End ***/
 
@@ -684,7 +747,30 @@ body {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+.footer-brand {
+    width: 100%;
+    text-align: center;
+}
 
+.footer-brand-logo {
+    display: block;
+    width: 48px;
+    height: auto;
+    margin: 0 auto 6px;
+}
+
+.footer-brand h3 {
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.2;
+}
+
+.footer-brand-description {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+}
 /*** Footer End ***/
 
 
@@ -719,12 +805,23 @@ body {
   }
 
   /* Resize the brand text in the navbar */
-  .navbar-brand h1 {
-    font-size: 1.4rem !important;
-    white-space: normal !important;
-    line-height: 1.3;
-    text-align: center;
-  }
+@media (max-width: 767.98px) {
+    .site-brand {
+        max-width: calc(100% - 70px);
+        gap: 8px;
+        margin-right: 0;
+    }
+
+    .site-brand .site-brand__logo {
+        height: 40px;
+    }
+
+    .site-brand__name {
+        font-size: 1.15rem;
+        line-height: 1.15;
+        white-space: normal;
+    }
+}
 
   /* Reduce padding inside navbar items */
   .navbar .navbar-nav .nav-item {
